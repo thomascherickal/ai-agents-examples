@@ -253,34 +253,6 @@ When working with these examples, follow this general workflow. First, choose th
 
 Protect your API keys by never committing them to version control. Monitor your OpenAI API usage carefully to control costs, as some examples can consume significant tokens. Each example includes basic error handling, but you should extend it for production use. Modify prompts and parameters to fit your specific needs and use cases. Always test with small datasets before processing large volumes of data.
 
-### Common Customizations
-
-You can change which model is used in most examples. Instead of GPT-4, you might use GPT-3.5-turbo for cost savings:
-
-```python
-# Use GPT-3.5-turbo for cost savings
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
-```
-
-Adjust the temperature parameter to control creativity. Use higher values (0.7 to 1.0) for more creative outputs and lower values (0.0 to 0.3) for more deterministic, focused responses:
-
-```python
-# More creative
-llm = ChatOpenAI(model="gpt-4", temperature=0.9)
-
-# More deterministic
-llm = ChatOpenAI(model="gpt-4", temperature=0.1)
-```
-
-Modify chunk sizes for document processing to balance context and processing speed:
-
-```python
-text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=2000,  # Increase for more context
-    chunk_overlap=400  # Increase overlap for better continuity
-)
-```
-
 ## Troubleshooting
 
 ### Common Issues and Solutions
@@ -326,7 +298,7 @@ For comprehensive learning, consider books like "Building LLM Powered Applicatio
 
 ### Community Support
 
-Join communities to get help and share knowledge. The LangChain Discord server provides real-time support. The OpenAI Community Forum hosts discussions about API usage. The AI Agents subreddit connects practitioners. Stack Overflow has questions tagged with langchain, openai, and ai-agents.
+Join communities to get help and share knowledge. The LangChain Discord server provides real-time support. The OpenAI Community Forum hosts discussions about API usage. The AI Agents subreddit connects practitioners. 
 
 ## License
 
