@@ -4,7 +4,7 @@ Get up and running with AI Agents Examples in 5 minutes!
 
 ## Prerequisites
 
-- Python 3.8 or higher installed
+- Python 3.10 or higher installed
 - Basic command line knowledge
 - OpenAI API account (free tier works for testing)
 
@@ -22,7 +22,7 @@ Get up and running with AI Agents Examples in 5 minutes!
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-agents-examples.git
+git clone https://github.com/thomascherickal/ai-agents-examples.git
 cd ai-agents-examples
 
 # Create virtual environment
@@ -135,14 +135,12 @@ Approximate costs for testing (as of January 2025):
 
 ## Success Checklist
 
-- [ ] Python 3.8+ installed and working
+- [ ] Python 3.10+ installed and working
 - [ ] OpenAI API key obtained and set
 - [ ] Virtual environment created
 - [ ] At least one example running successfully
 - [ ] Ready to explore more frameworks!
 
 ---
-
-**🎉 Congratulations! You're now ready to build AI agents!**
 
 For detailed documentation, see [README.md](README.md)
